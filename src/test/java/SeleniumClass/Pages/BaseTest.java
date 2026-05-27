@@ -17,8 +17,7 @@ public class BaseTest {
         driver = new ChromeDriver();
         driver.get(URL);
 
-        loginPage =new LoginPage(driver);   
-        //Assert.assertTrue(driver.findElement(By.id("login-page")).isDisplayed());
+        loginPage =new LoginPage(driver);          
         Assert.assertTrue(loginPage.loginHomePage.isDisplayed());
     }
 
